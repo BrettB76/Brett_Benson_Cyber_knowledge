@@ -115,7 +115,7 @@ SSH into the control node and follow the steps below:
 
 ![alt text](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Metricbeat_config.png "Metricbeat")
 - Run the playbook with command: `ansible-playbook Full_VN_ELK_setup.yml`
-- To check if the installationg has worked, access web browser
+- To check if the installation has worked, access a web browser
   - Web servers: http://20.211.120.76/setup.php
   - ELK server: http://52.243.88.131:5601/app/kibana#/home
 
