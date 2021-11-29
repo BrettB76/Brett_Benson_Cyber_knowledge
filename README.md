@@ -109,8 +109,8 @@ SSH into the control node and follow the steps below:
 ![alt text](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/hosts_configuration.png "Hosts configuration")
 - Ensure that the /etc/ansible/roles/install-filebeat/files/filebeat-config.yml file has the correct IP address for ELK server (lines 1106 & 1806).
 
-![alt text](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Filebeat_config_1106.png "Filebeat 1106")
-![alt text](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Filebeat%20config_1806.png "Filebeat 1806")
+![alt text](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Filebeat_config_line_1106.png "Filebeat 1106")
+![alt text](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Filebeat%20config_line_1806.png "Filebeat 1806")
 - Ensure that the /etc/ansible/roles/install-metricbeat/files/metricbeat-config.yml file has the correct IP address for ELK server (line 62).
 
 ![alt text](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Metricbeat_config.png "Metricbeat")
