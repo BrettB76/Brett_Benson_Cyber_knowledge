@@ -1,0 +1,14 @@
+---
+- name: Install ELK
+  hosts: elk
+  become: true
+  roles:
+    - install-elk
+
+- name: Install DVWA, filebeat and metricbeat on webservers
+  hosts: webservers
+  become: true
+  roles:
+    - install-dvwa
+    - install-filebeat
+    - install-metricbeat
