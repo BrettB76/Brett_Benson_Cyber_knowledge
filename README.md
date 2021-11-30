@@ -79,7 +79,7 @@ In order to view and check log data in Kibana the following processes were run.
     - [Kibana - Increase CPU usage](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Stress_increase_CPU_usage.png)
 
 - Run a simulated DoS web attack using a nested loop script from the Jump Box provisioner.
-  - Link to script: https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Linux/ELK_wget_requests_test_script.sh
+  - Link to script: [ELK wget DoS simulation script](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Linux/ELK_wget_requests_test_script.sh)
   - Run for a few minutes: command `./ELK_wget_requests_test_script`
   - Results show an increase in network traffic
   - Link to results
