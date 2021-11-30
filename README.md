@@ -63,12 +63,12 @@ SSH into the control node and follow the steps below:
 In order to view and check log data in Kibana the following processes were run. 
 
 - Generated high amount of failed SSH login attempts from the Jump Box provisioner using a nested loop script to test Filebeat.
-  - Link to script: https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Linux/ELK_ssh_failed_login_test_script.sh
+  - Link to script: [ELK ssh failed loging test](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Linux/ELK_ssh_failed_login_test_script.sh)
   - Run the command: `./ELK_ssh_failed_login_test_script` and let it run for a few minutes.
   - Results are accessed through the Logs and Dashboard section of Kibana using SSH template and show both successful and failed logins.
   - Links to results
-    - https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/SSH_failed_login.pdf
-    - https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/SSH_failed_login_logs.png
+    - [Kibana - Dashboard with SSH](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/SSH_failed_login.pdf)
+    - [Kibana - Logs for failed SSH logins](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/SSH_failed_login_logs.png)
 
 - Run a Linux stress test from each individual web server to utlise Metricbeat.
   - SSH into each web server VM and run the below commands
@@ -76,7 +76,7 @@ In order to view and check log data in Kibana the following processes were run.
   - Run stress for a few minutes `sudo stress --cpu 1`
   - Results show an increase in CPU usage.  This could be a cause of concern as overworked computers are at greater risk of failure.
   - Link to results
-    - https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Stress_increase_CPU_usage.png
+    - [Kibana - Increase CPU usage](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Stress_increase_CPU_usage.png)
 
 - Run a simulated DoS web attack using a nested loop script from the Jump Box provisioner.
   - Link to script: https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Linux/ELK_wget_requests_test_script.sh
