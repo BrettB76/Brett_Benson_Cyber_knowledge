@@ -1,6 +1,70 @@
 # Brett_Benson_Cyber_knowledge
 Sample configuration files and information that demonstrates Cybersecurity skills
 
+## Automated ELK Stack Deployment
+
+The files in this repository were used to configure the network depicted below.
+
+![alt text](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Diagrams/Cloud_network_with_ELK.png "Cloud Network with ELK")
+
+These files have been tested and used to generate a live ELK deployment on Azure. The configuration files have been collated together into roles with the main YAML file creating the entire deployment pictured above.
+Alternatively, individual roles may be used to install only certain pieces of the configuration, such as Filebeat.
+
+Link to main YAML installation file: https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Ansible/Full_VN_ELK_setup_yml.txt
+![alt text](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/Full_VN_ELK_setup.png "Set up YML")
+
+This document contains the following details:
+- Description of the Topology
+- Access Policies
+- ELK Configuration
+  - Beats in Use
+  - Machines Being Monitored
+- How to Use the Ansible Build
+
+
+### Description of the Topology
+
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+
+Load balancing ensures that the application will be highly redundant, in addition to restricting access to the network.
+Load balancers can defend an organisation against distributed denial-of-service (DDoS) attacks.
+The primary advantages of using a Jump Box provisioner is automation which reduces the potential for human error and makes it easier to configure potentially thousands of identical machines.
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
+- Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+- Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server or container.
+
+The configuration details of each machine may be found below.
+
+| Name       | Function   | IP Address | Operating System |
+|------------|------------|------------|------------------|
+| Jump Box   | Gateway    | 10.0.0.4   | Linux            |
+| Web-1      | Webserver  | 10.0.0.5   | Linux            |
+| Web-2      | Webserver  | 10.0.0.6   | Linux            |
+| Web-3      | Webserver  | 10.0.0.7   | Linux            |
+| ELK_Server | Monitoring | 10.1.0.4   | Linux            |
+
+### Access Policies
+
+The machines on the internal network are not exposed to the public Internet. 
+
+Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address:
+49.180.225.215
+
+Machines within the network can only be accessed from the Ansible container with an SSH key pair, as using a password is inherently weak.
+
+The ELK VM is accessible via the Jump Box provisioner (IP 10.0.0.4) and my personal computer (IP 49.180.225.215) through port 5601 to utilise the Kibana web application.
+
+A summary of the access policies in place can be found in the table below.
+
+| Name       | Publicaly Accessible | Allowed IP Address        |
+|------------|----------------------|---------------------------|
+| Jump Box   | Yes                  | 49.180.225.215            |
+| Web-1      | No                   | 10.0.0.4                  |
+| Web-2      | No                   | 10.0.0.4                  |
+| Web-3      | No                   | 10.0.0.4                  |
+| ELK_Server | Yes                  | 10.0.0.4 & 49.180.225.215 |
+
 ### ELK Configuration
 
 Ansible was used to automate the configuration of the ELK machine. No configuration was performed manually, which is advantageous because it acts as Infrastructure as Code (IaC).
