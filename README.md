@@ -83,4 +83,4 @@ In order to view and check log data in Kibana the following processes were run.
   - Run for a few minutes: command `./ELK_wget_requests_test_script`
   - Results show an increase in network traffic
   - Link to results
-    - https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/wget_network_traffic.png
+    - [Kibana - Increased network traffic](https://github.com/BrettB76/Brett_Benson_Cyber_knowledge/blob/main/Images/wget_network_traffic.png)
