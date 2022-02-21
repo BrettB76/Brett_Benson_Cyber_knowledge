@@ -1,5 +1,5 @@
 # Brett Benson_Cybersecurity knowledge and practical skills.
-Project 1. Azure - Cloud network. ELK Stack deployment with containerisation and automation.
+Azure - Cloud network. ELK Stack deployment with containerisation and automation.
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
